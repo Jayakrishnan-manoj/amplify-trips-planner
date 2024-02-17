@@ -1,4 +1,37 @@
 {
+  "api": {
+    "tripplanner": {
+      "dependsOn": [
+        {
+          "attributes": [
+            "UserPoolId"
+          ],
+          "category": "auth",
+          "resourceName": "tripplanner3b3f3df2"
+        }
+      ],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [
+            {
+              "authenticationType": "AMAZON_COGNITO_USER_POOLS",
+              "userPoolConfig": {
+                "userPoolId": "authtripplanner3b3f3df2"
+              }
+            }
+          ],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            },
+            "authenticationType": "API_KEY"
+          }
+        }
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync"
+    }
+  },
   "auth": {
     "tripplanner3b3f3df2": {
       "customAuth": false,

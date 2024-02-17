@@ -14,6 +14,9 @@
     "categories": {
       "auth": {
         "tripplanner3b3f3df2": {}
+      },
+      "api": {
+        "tripplanner": {}
       }
     }
   }
